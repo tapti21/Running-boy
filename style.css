@@ -1,0 +1,44 @@
+body
+{
+    background-color:orange;
+}
+.road
+{
+    border-bottom: 7px dashed  black;
+}
+.boy
+{
+    background:url(ts.jpg);
+    width:112px;
+    height:309px;
+    animation:walk 1s steps(8) infinite,
+    forward 5s linear infinite;
+}
+
+
+
+
+
+
+@keyframes  walk
+{
+    0%
+    {
+        background-position:0px;
+    }
+    100%
+    {
+        background-position:1400px;
+    }
+}
+@keyframes forward
+{
+    0%
+    {
+        transform: translatex(-90px);
+    }
+    100%
+    {
+        transform: translatex(1200px);
+    }
+}
